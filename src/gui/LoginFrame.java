@@ -120,6 +120,8 @@ public class LoginFrame extends JFrame {
         connectButton.setFont(new Font("Arial", Font.BOLD, 14));
         connectButton.setBackground(new Color(41, 128, 185));
         connectButton.setForeground(Color.WHITE);
+        connectButton.setOpaque(true);
+        connectButton.setBorderPainted(false);
         connectButton.setFocusPainted(false);
         connectButton.setPreferredSize(new Dimension(150, 40));
         connectButton.setCursor(new Cursor(Cursor.HAND_CURSOR));

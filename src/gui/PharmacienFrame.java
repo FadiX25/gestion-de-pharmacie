@@ -107,6 +107,8 @@ public class PharmacienFrame extends JFrame {
         JButton logoutBtn = new JButton("Déconnexion");
         logoutBtn.setBackground(new Color(231, 76, 60));
         logoutBtn.setForeground(Color.WHITE);
+        logoutBtn.setOpaque(true);
+        logoutBtn.setBorderPainted(false);
         logoutBtn.setFocusPainted(false);
         logoutBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         
@@ -277,10 +279,13 @@ public class PharmacienFrame extends JFrame {
         
         // Bouton vendre
         gbc.gridx = 0; gbc.gridy = 5; gbc.gridwidth = 2;
-        JButton vendreBtn = new JButton("💰 Enregistrer la vente");
+        JButton vendreBtn = new JButton("Enregistrer la vente");
         vendreBtn.setFont(new Font("Arial", Font.BOLD, 14));
-        vendreBtn.setBackground(new Color(46, 204, 113));
+        vendreBtn.setBackground(new Color(39, 174, 96));
         vendreBtn.setForeground(Color.WHITE);
+        vendreBtn.setOpaque(true);
+        vendreBtn.setBorderPainted(false);
+        vendreBtn.setFocusPainted(false);
         panel.add(vendreBtn, gbc);
         
         // Message résultat

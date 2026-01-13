@@ -105,6 +105,8 @@ public class GestionnaireFrame extends JFrame {
         JButton logoutBtn = new JButton("Déconnexion");
         logoutBtn.setBackground(new Color(231, 76, 60));
         logoutBtn.setForeground(Color.WHITE);
+        logoutBtn.setOpaque(true);
+        logoutBtn.setBorderPainted(false);
         logoutBtn.setFocusPainted(false);
         logoutBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         
@@ -233,10 +235,13 @@ public class GestionnaireFrame extends JFrame {
         
         // Bouton ajouter
         gbc.gridx = 0; gbc.gridy = 5; gbc.gridwidth = 2;
-        JButton ajouterBtn = new JButton("➕ Ajouter le médicament");
+        JButton ajouterBtn = new JButton("Ajouter le medicament");
         ajouterBtn.setFont(new Font("Arial", Font.BOLD, 14));
-        ajouterBtn.setBackground(new Color(46, 204, 113));
+        ajouterBtn.setBackground(new Color(39, 174, 96));
         ajouterBtn.setForeground(Color.WHITE);
+        ajouterBtn.setOpaque(true);
+        ajouterBtn.setBorderPainted(false);
+        ajouterBtn.setFocusPainted(false);
         panel.add(ajouterBtn, gbc);
         
         // Message
@@ -302,9 +307,12 @@ public class GestionnaireFrame extends JFrame {
         JPanel validationPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
         JLabel idLabel = new JLabel("ID Commande:");
         JTextField idField = new JTextField(5);
-        JButton validerBtn = new JButton("✓ Valider livraison");
-        validerBtn.setBackground(new Color(46, 204, 113));
+        JButton validerBtn = new JButton("Valider livraison");
+        validerBtn.setBackground(new Color(39, 174, 96));
         validerBtn.setForeground(Color.WHITE);
+        validerBtn.setOpaque(true);
+        validerBtn.setBorderPainted(false);
+        validerBtn.setFocusPainted(false);
         
         validationPanel.add(idLabel);
         validationPanel.add(idField);
@@ -399,10 +407,13 @@ public class GestionnaireFrame extends JFrame {
         
         // Bouton commander
         gbc.gridx = 0; gbc.gridy = 4; gbc.gridwidth = 2;
-        JButton commanderBtn = new JButton("📦 Créer la commande");
+        JButton commanderBtn = new JButton("Creer la commande");
         commanderBtn.setFont(new Font("Arial", Font.BOLD, 14));
         commanderBtn.setBackground(new Color(41, 128, 185));
         commanderBtn.setForeground(Color.WHITE);
+        commanderBtn.setOpaque(true);
+        commanderBtn.setBorderPainted(false);
+        commanderBtn.setFocusPainted(false);
         panel.add(commanderBtn, gbc);
         
         // Message
@@ -473,10 +484,13 @@ public class GestionnaireFrame extends JFrame {
         JScrollPane scrollPane = new JScrollPane(rapportArea);
         
         // Bouton générer
-        JButton genererBtn = new JButton("📊 Générer le rapport");
+        JButton genererBtn = new JButton("Generer le rapport");
         genererBtn.setFont(new Font("Arial", Font.BOLD, 14));
         genererBtn.setBackground(new Color(142, 68, 173));
         genererBtn.setForeground(Color.WHITE);
+        genererBtn.setOpaque(true);
+        genererBtn.setBorderPainted(false);
+        genererBtn.setFocusPainted(false);
         
         genererBtn.addActionListener(e -> {
             StringBuilder sb = new StringBuilder();
