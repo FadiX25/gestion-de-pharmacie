@@ -111,8 +111,8 @@ public class VenteService {
         System.out.println("\n========== VENTE EFFECTUÉE ==========");
         System.out.println("Médicament: " + medicament.getNom() + " " + medicament.getDosage());
         System.out.println("Quantité: " + quantite);
-        System.out.println("Prix unitaire: " + medicament.getPrixUnitaire() + " €");
-        System.out.println("TOTAL: " + montantTotal + " €");
+        System.out.println("Prix unitaire: " + medicament.getPrixUnitaire() + " DT");
+        System.out.println("TOTAL: " + montantTotal + " DT");
         System.out.println("======================================\n");
         
         return true;
@@ -217,7 +217,7 @@ public class VenteService {
         
         System.out.println("--------------------------------------------");
         System.out.println("Total: " + ventes.size() + " ventes");
-        System.out.println("Chiffre d'affaires: " + getChiffreAffairesTotal() + " €");
+        System.out.println("Chiffre d'affaires: " + getChiffreAffairesTotal() + " DT");
         System.out.println("============================================\n");
     }
     
@@ -237,7 +237,7 @@ public class VenteService {
             System.out.println("-------------------------------------");
             
             for (Vente vente : ventes) {
-                System.out.printf("%-5d %-12s %-10d %-10.2f €%n", 
+                System.out.printf("%-5d %-12s %-10d %-10.2f DT%n", 
                     vente.getId(), 
                     vente.getDateVente().toString().substring(11, 16),
                     vente.getQuantite(),
@@ -247,7 +247,7 @@ public class VenteService {
         }
         
         System.out.println("-------------------------------------");
-        System.out.println("CA du jour: " + getChiffreAffairesDuJour() + " €");
+        System.out.println("CA du jour: " + getChiffreAffairesDuJour() + " DT");
         System.out.println("=====================================\n");
     }
 }

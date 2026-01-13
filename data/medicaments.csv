@@ -1,8 +1,8 @@
 id;nom;dosage;stock;prixUnitaire
-1;Paracetamol;500mg;100;2.50
-2;Ibuprofene;400mg;75;3.80
-3;Amoxicilline;250mg;50;8.50
-4;Doliprane;1000mg;150;3.20
-5;Aspirine;500mg;5;2.00
-6;Ventoline;100mcg;30;12.50
-7;Omeprazole;20mg;40;6.75
+1;Paracetamol;500mg;100;1.50
+2;Ibuprofene;400mg;75;2.80
+3;Amoxicilline;250mg;50;5.50
+4;Doliprane;1000mg;150;2.20
+5;Aspirine;500mg;5;1.20
+6;Ventoline;100mcg;30;8.50
+7;Omeprazole;20mg;40;4.75

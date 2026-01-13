@@ -45,7 +45,7 @@ public class PharmacienFrame extends JFrame {
         this.clientService = new ClientService();
         
         // Configuration de la fenêtre
-        setTitle("💊 Pharmacie - Espace Pharmacien");
+        setTitle("Pharmacie - Espace Pharmacien");
         setSize(900, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -144,7 +144,7 @@ public class PharmacienFrame extends JFrame {
         searchPanel.add(refreshBtn);
         
         // Tableau des médicaments
-        String[] colonnes = {"ID", "Nom", "Dosage", "Stock", "Prix (€)"};
+        String[] colonnes = {"ID", "Nom", "Dosage", "Stock", "Prix (DT)"};
         DefaultTableModel model = new DefaultTableModel(colonnes, 0) {
             @Override
             public boolean isCellEditable(int row, int column) {
@@ -302,7 +302,7 @@ public class PharmacienFrame extends JFrame {
                     int id = Integer.parseInt(idMedField.getText().trim());
                     Medicament med = medicamentService.getMedicament(id);
                     if (med != null) {
-                        infoMedLabel.setText(med.getNom() + " - " + med.getDosage() + " - Stock: " + med.getStock() + " - Prix: " + med.getPrixUnitaire() + "€");
+                        infoMedLabel.setText(med.getNom() + " - " + med.getDosage() + " - Stock: " + med.getStock() + " - Prix: " + med.getPrixUnitaire() + " DT");
                         infoMedLabel.setForeground(new Color(46, 204, 113));
                     } else {
                         infoMedLabel.setText("Médicament non trouvé");
@@ -359,7 +359,7 @@ public class PharmacienFrame extends JFrame {
         topPanel.add(refreshBtn);
         
         // Tableau des ventes
-        String[] colonnes = {"ID", "Date", "ID Médicament", "Quantité", "Montant (€)"};
+        String[] colonnes = {"ID", "Date", "ID Médicament", "Quantité", "Montant (DT)"};
         DefaultTableModel model = new DefaultTableModel(colonnes, 0) {
             @Override
             public boolean isCellEditable(int row, int column) {

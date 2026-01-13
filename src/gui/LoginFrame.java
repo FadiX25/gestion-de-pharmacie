@@ -35,7 +35,7 @@ public class LoginFrame extends JFrame {
         this.authService = new AuthenticationService();
         
         // Configuration de la fenêtre
-        setTitle("💊 Pharmacie - Connexion");
+        setTitle("Pharmacie - Connexion");
         setSize(450, 350);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null); // Centrer la fenêtre
@@ -134,11 +134,11 @@ public class LoginFrame extends JFrame {
         infoPanel.setBackground(new Color(240, 248, 255));
         infoPanel.setBorder(BorderFactory.createTitledBorder("Comptes de test"));
         
-        JLabel info1 = new JLabel("Pharmacien: pdupont / pharma123");
+        JLabel info1 = new JLabel("Pharmacien: ybali / pharma123");
         info1.setFont(new Font("Arial", Font.PLAIN, 11));
         info1.setAlignmentX(Component.CENTER_ALIGNMENT);
         
-        JLabel info2 = new JLabel("Gestionnaire: aadmin / admin123");
+        JLabel info2 = new JLabel("Gestionnaire: ybenammar / admin123");
         info2.setFont(new Font("Arial", Font.PLAIN, 11));
         info2.setAlignmentX(Component.CENTER_ALIGNMENT);
         

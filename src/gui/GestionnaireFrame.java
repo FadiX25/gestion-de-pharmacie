@@ -42,7 +42,7 @@ public class GestionnaireFrame extends JFrame {
         this.venteService = new VenteService();
         
         // Configuration de la fenêtre
-        setTitle("💊 Pharmacie - Espace Gestionnaire");
+        setTitle("Pharmacie - Espace Gestionnaire");
         setSize(950, 650);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -137,7 +137,7 @@ public class GestionnaireFrame extends JFrame {
         topPanel.add(alertesBtn);
         
         // Tableau
-        String[] colonnes = {"ID", "Nom", "Dosage", "Stock", "Prix (€)", "État"};
+        String[] colonnes = {"ID", "Nom", "Dosage", "Stock", "Prix (DT)", "État"};
         DefaultTableModel model = new DefaultTableModel(colonnes, 0) {
             @Override
             public boolean isCellEditable(int row, int column) {
@@ -228,7 +228,7 @@ public class GestionnaireFrame extends JFrame {
         
         // Prix unitaire
         gbc.gridx = 0; gbc.gridy = 4;
-        panel.add(new JLabel("Prix unitaire (€):"), gbc);
+        panel.add(new JLabel("Prix unitaire (DT):"), gbc);
         gbc.gridx = 1;
         JSpinner prixSpinner = new JSpinner(new SpinnerNumberModel(0.0, 0.0, 10000.0, 0.5));
         panel.add(prixSpinner, gbc);

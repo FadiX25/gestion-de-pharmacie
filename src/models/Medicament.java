@@ -189,7 +189,7 @@ public class Medicament {
         System.out.println("Nom: " + nom);
         System.out.println("Dosage: " + dosage);
         System.out.println("Stock: " + stock + (estStockCritique() ? " (CRITIQUE!)" : ""));
-        System.out.println("Prix unitaire: " + prixUnitaire + " €");
+        System.out.println("Prix unitaire: " + prixUnitaire + " DT");
         System.out.println("=================================");
     }
 }

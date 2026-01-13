@@ -85,7 +85,7 @@ public class Vente {
         System.out.println("ID Médicament: " + idMedicament);
         System.out.println("Quantité: " + quantite);
         System.out.println("Date: " + dateVente);
-        System.out.println("Montant Total: " + montantTotal + " €");
+        System.out.println("Montant Total: " + montantTotal + " DT");
         System.out.println("===========================");
     }
     

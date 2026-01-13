@@ -247,7 +247,7 @@ public class MedicamentService {
         
         for (Medicament med : medicaments) {
             String stockAlert = med.estStockCritique() ? " ⚠️" : "";
-            System.out.printf("%-5d %-25s %-10s %-8d %.2f €%s%n", 
+            System.out.printf("%-5d %-25s %-10s %-8d %.2f DT%s%n", 
                 med.getId(), 
                 med.getNom(), 
                 med.getDosage(), 

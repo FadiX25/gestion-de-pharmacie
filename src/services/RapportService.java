@@ -38,8 +38,8 @@ public class RapportService {
         // Section: Chiffre d'affaires
         System.out.println("║                                                              ║");
         System.out.println("║  📊 CHIFFRE D'AFFAIRES                                       ║");
-        System.out.printf("║     • CA Total:      %10.2f €                            ║%n", venteService.getChiffreAffairesTotal());
-        System.out.printf("║     • CA du jour:    %10.2f €                            ║%n", venteService.getChiffreAffairesDuJour());
+        System.out.printf("║     • CA Total:      %10.2f DT                           ║%n", venteService.getChiffreAffairesTotal());
+        System.out.printf("║     • CA du jour:    %10.2f DT                           ║%n", venteService.getChiffreAffairesDuJour());
         
         // Section: Ventes
         System.out.println("║                                                              ║");
@@ -112,11 +112,11 @@ public class RapportService {
         double ca = venteService.getChiffreAffairesDuJour();
         
         System.out.printf("║  Nombre de ventes:     %5d                                ║%n", ventes.size());
-        System.out.printf("║  Chiffre d'affaires:   %10.2f €                         ║%n", ca);
+        System.out.printf("║  Chiffre d'affaires:   %10.2f DT                        ║%n", ca);
         
         if (!ventes.isEmpty()) {
             double moyenneParVente = ca / ventes.size();
-            System.out.printf("║  Moyenne par vente:    %10.2f €                         ║%n", moyenneParVente);
+            System.out.printf("║  Moyenne par vente:    %10.2f DT                        ║%n", moyenneParVente);
         }
         
         System.out.println("║                                                            ║");
