@@ -1,0 +1,4 @@
+id;idMedicament;quantite;typeOperation;dateOperation
+1;1;-2;VENTE;2026-01-13 10:30:00
+2;2;-1;VENTE;2026-01-13 11:15:00
+3;4;-3;VENTE;2026-01-13 14:00:00
